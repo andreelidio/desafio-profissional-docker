@@ -1,0 +1,37 @@
+#---------------
+# MDB
+#---------------
+version: '3.1'
+
+volumes:
+  mdb_vol:
+
+networks:
+  mb_net:
+    driver: bridge
+
+services:
+  mariadb:
+    image: mariadb
+    networks:
+      - mb_net
+    ports:
+      - 3306:330
+    volumes:
+      - mdb_vol:/var/lib/mysql
+    restart: always
+    environment:
+      MARIADB_USER: mdbuser
+      MARIADB_ASSWORD: abc@123
+      MARIADB_ROOT_PASSWORD: abc@123
+
+#---------------
+# phpmyadmin
+#---------------
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
