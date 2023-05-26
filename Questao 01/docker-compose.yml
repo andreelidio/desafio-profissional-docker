@@ -23,9 +23,9 @@ services:
       MONGO_INITDB_ROOT_USERNAME: mongoadmin
       MONGO_INITDB_ROOT_PASSWORD: secret
 
-# #---------------
-# # Mongo EXPRESS
-# #---------------
+##---------------
+## Mongo EXPRESS
+##---------------
   mongo-express:
     image: mongo-express:latest
     networks:
