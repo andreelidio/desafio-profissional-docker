@@ -15,7 +15,7 @@ networks:
 services:
   mdb:
     image: mariadb:latest
-    container_name: mmdb
+    container_name: mdb
     environment:
       MARIABD_USER: mdbadmin
       MARIADB_PASSWORD: secret
@@ -34,7 +34,8 @@ services:
     image: phpmyadmin:latest
     container_name: phpmyadmin
     environment:
-      PMA_HOST: mdb:3306
+      PMA_HOST: mdb
+      PMA_PORT: 3306
       PMA_USER: root
       PMA_PASSWORD: secret
     ports:
