@@ -1,6 +1,7 @@
 DESAFIO 02.
 
-Crie um docker compose com o banco de dados MariaDB e a ferramenta de interface phpMyAdmin. Mas antes vamos saber a definição de cada um.
+Crie um docker compose com o banco de dados MariaDB e a ferramenta de interface phpMyAdmin. 
+Mas antes vamos saber a definição de cada um.
 
 MariaDB Server é um dos servidores de banco de dados mais populares do mundo. É feito pelos desenvolvedores originais do MySQL e com garantia de código aberto.
 
@@ -19,7 +20,7 @@ https://www.phpmyadmin.net
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/3343871e-c486-4d20-a3cf-8d38f1dc14bd)
 
 
-2. Acessand o phpMyAdmin.
+2. Acessando o phpMyAdmin.
 
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/4a582209-085d-4edf-afef-069365b5d284)
 
