@@ -2,7 +2,7 @@
 version: '3.8'
 
 volumes:
-  mdb_vol:
+  mdb:
 
 networks:
   mdb_net:
@@ -21,7 +21,7 @@ services:
       MARIADB_PASSWORD: secret
       MARIADB_ROOT_PASSWORD: secret
     volumes:
-      - mdb_vol:/var/lib/mysql
+      - mdb:/var/lib/mysql
     ports: 
       - 3306:3306
     networks:

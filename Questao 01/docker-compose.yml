@@ -1,7 +1,7 @@
 version: '3.8'
 
 volumes:
-  mongodb_vol:
+  mongodb:
 
 networks:
   mongodb_net:
@@ -18,13 +18,12 @@ services:
       MONGO_INITDB_ROOT_USERNAME: mongoadmin
       MONGO_INITDB_ROOT_PASSWORD: secret
     volumes:
-      - mongo_db:/data/db
+      - mongodb:/data/db
     ports: 
       - 27017:27017
     networks:
       - mongodb_net 
     
-
 ##---------------
 ## Mongo EXPRESS
 ##---------------
@@ -36,7 +35,7 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: mongoadmin
       ME_CONFIG_MONGODB_ADMINPASSWORD: secret 
     volumes:
-      - mongo_db:/data/db
+      - mongodb:/data/db
     ports:
       - 8081:8081
     networks:
