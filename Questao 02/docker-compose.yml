@@ -1,37 +1,46 @@
-#---------------
-# MDB
-#---------------
-version: '3.1'
+
+version: '3.8'
 
 volumes:
   mdb_vol:
 
 networks:
-  mb_net:
+  mdb_net:
     driver: bridge
 
+##---------------
+## MARIADB
+##---------------
+
 services:
-  mariadb:
-    image: mariadb
-    networks:
-      - mb_net
-    ports:
-      - 3306:330
+  mdb:
+    image: mariadb:latest
+    container_name: mmdb
+    environment:
+      MARIABD_USER: mdbadmin
+      MARIADB_PASSWORD: secret
+      MARIADB_ROOT_PASSWORD: secret
     volumes:
       - mdb_vol:/var/lib/mysql
-    restart: always
-    environment:
-      MARIADB_USER: mdbuser
-      MARIADB_ASSWORD: abc@123
-      MARIADB_ROOT_PASSWORD: abc@123
-
-#---------------
-# phpmyadmin
-#---------------
+    ports: 
+      - 3306:3306
+    networks:
+      - mdb_net 
+    
+##---------------
+## PhpMyAdmin
+##---------------
   phpmyadmin:
-    image: phpmyadmin
-    restart: always
-    ports:
-      - 8080:80
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
     environment:
-      - PMA_ARBITRARY=1
+      PMA_HOST: mdb:3306
+      PMA_USER: root
+      PMA_PASSWORD: secret
+    ports:
+      - 8080:8080
+    networks:
+      - mdb_net
+    depends_on:
+      - mdb
+    

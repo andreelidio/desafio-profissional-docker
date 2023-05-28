@@ -1,8 +1,15 @@
+version: '3.8'
+
+volumes:
+  mongodb_vol:
+
+networks:
+  mongodb_net:
+    driver: bridge
+
 ##---------------
 ## Mongo DB
 ##---------------
-version: '3.8'
-
 services:
   mongodb:
     image: mongo:latest
@@ -11,11 +18,11 @@ services:
       MONGO_INITDB_ROOT_USERNAME: mongoadmin
       MONGO_INITDB_ROOT_PASSWORD: secret
     volumes:
-      - $HOME/ubuntu/database/mongo_db:/data/db
+      - mongo_db:/data/db
     ports: 
       - 27017:27017
     networks:
-      - mongo_net 
+      - mongodb_net 
     
 
 ##---------------
@@ -29,12 +36,10 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: mongoadmin
       ME_CONFIG_MONGODB_ADMINPASSWORD: secret 
     volumes:
-      - $HOME/ubuntu/database/mongo_db
+      - mongo_db:/data/db
     ports:
       - 8081:8081
     networks:
-      - mongo_net
-    
-networks:
-  mongo_net:
-    driver: bridge
+      - mongodb_net
+
+
