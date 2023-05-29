@@ -10,8 +10,9 @@ Questão 1 - Crie o MongoDB e o Mongo Express usando o docker compose.
 
 Questão 2 - Crie um docker compose com o banco de dados MariaDB e a ferramenta de interface phpMyAdmin.
 
+Questão 3 -Criar o banco de dados PostgreSQL e a ferramenta de interface pgAdmin usando o docker compose.
 
-Questão 3
+
 Questão 4
 Questão 5
 Questão 6
