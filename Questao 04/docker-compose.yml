@@ -1,0 +1,39 @@
+version: '3.8'
+
+volumes:
+  redis:
+
+networks:
+  redis_net:
+    driver: bridge
+
+##---------------
+## Redis
+##---------------
+services:
+  redis: 
+    image: redis:latest
+    container_name: redis
+    environment:
+      REDIS_PASSWORD: secret
+    volumes:
+      - redis:/redis/data
+    ports:
+      - 6379:6379
+    networks:
+      - redis_net
+
+##-----------------
+## Redis Commander
+##-----------------
+  redis-commander: 
+    image: rediscommander/redis-commander:latest   
+    container_name: redis-commander
+    environment:
+      - REDIS_HOSTS=local:redis:6379name=value
+    ports:
+      - 8081:8081
+    networks:
+      - redis_net
+    
+
