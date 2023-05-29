@@ -17,12 +17,21 @@ https://www.phpmyadmin.net
 
 1. Container
 
-![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/3343871e-c486-4d20-a3cf-8d38f1dc14bd)
+![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/a2cb33dc-74ba-4ed5-a182-41eb446e01cf)
 
 
 2. Acessando o phpMyAdmin.
 
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/4a582209-085d-4edf-afef-069365b5d284)
+
+![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/e63630b0-ad67-4fc3-8806-ee560720824c)
+
+![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/2a7cabc4-d5ad-49f9-a9eb-ce05e8c00b7f)
+
+
+
+
+
 
 
 
