@@ -6,6 +6,8 @@ O objetivo desse repositório é fixar o conteúdo de docker apresentado no curs
 
 https://www.devopspro.com.br/
 
+===============================================================================================
+
 Questão 1 - Crie o MongoDB e o Mongo Express usando o docker compose.
 
 Questão 2 - Crie um docker compose com o banco de dados MariaDB e a ferramenta de interface phpMyAdmin.
@@ -14,11 +16,12 @@ Questão 3 -Criar o banco de dados PostgreSQL e a ferramenta de interface pgAdmi
 
 Questão 4 - Criar o banco de dados Redis e a ferramenta de interface Redis Commander usando docker compose. 
 
-Questão 5
+Questão 5 - Crie o seu docker compose utilizando a imagem oficial do Wordpress.
 
-Questão 6
+Questão 6 - Criar o Dockerfile e o docker compose pra subir as aplicações em containers.
 
-Questão 7
+Questão 7 -  Fazer o deploy de 2 aplicações: Rotten-Potatoes, que é escrita em Python e utiliza um banco de dados MongoDB e o KubeNews, que usa NodeJS e um banco Postgre. Adicionar a interface de administração do banco relacionado.
+
 
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/41ed5da4-07f3-48d1-80fd-ab3cf2776eb5)
 
