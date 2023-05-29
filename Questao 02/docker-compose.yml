@@ -38,7 +38,7 @@ services:
       PMA_USER: root
       PMA_PASSWORD: secret
     ports:
-      - 8080:8080
+      - 8080:80
     networks:
       - mdb_net
     depends_on:
