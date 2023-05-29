@@ -1,0 +1,45 @@
+version: '3.8'
+
+volumes:
+  postgres:
+
+networks:
+  postgres_net:
+    driver: bridge
+
+##---------------
+## Postgres
+##---------------
+services:
+  postgres:
+    image: postgres:13.11
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin 
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - postgres_net
+
+##---------------
+## Pgadmin
+##---------------
+  pgadmin:
+    image: dpage/pgadmin4:7.1
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: desafiodocker@devopspro.com.br
+      PGADMIN_DEFAULT_PASSWORD: secret
+    ports:
+      - 8001:80
+    networks:
+      - postgres_net
+    depends_on:
+      - postgres
+  
+
+
+
