@@ -6,7 +6,7 @@ O objetivo desse repositório é fixar o conteúdo de docker apresentado no curs
 
 https://www.devopspro.com.br/
 
-=============================================================================================
+============================================================================================
 
 Questão 1 - Crie o MongoDB e o Mongo Express usando o docker compose.
 
