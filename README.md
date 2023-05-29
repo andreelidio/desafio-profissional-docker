@@ -6,11 +6,11 @@ O objetivo desse repositório é fixar o conteúdo de docker apresentado no curs
 
 https://www.devopspro.com.br/
 
-Questão 1
+Questão 1 - Crie o MongoDB e o Mongo Express usando o docker compose.
 
-Crie o MongoDB e o Mongo Express usando o docker compose
+Questão 2 - Crie um docker compose com o banco de dados MariaDB e a ferramenta de interface phpMyAdmin.
 
-Questão 2
+
 Questão 3
 Questão 4
 Questão 5
