@@ -8,3 +8,13 @@ Redis é um armazenamento de chave-valor de código aberto que funciona como um 
 O Redis Commander é uma interface gráfica de usuário (GUI) para o Redis, um banco de dados em memória usado para armazenamento de chave-valor. O Redis Commander fornece uma maneira conveniente de visualizar, gerenciar e interagir com as chaves e valores armazenados no Redis.
 
 https://hub.docker.com/r/rediscommander/redis-commander
+
+
+
+1. Container.
+
+![Captura de tela 2023-05-29 131919](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/c2a9aaf0-9fed-427c-8dd9-e6b1c3983ba8)
+
+2. Console do redis-commander.
+
+![Captura de tela 2023-05-29 132505](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/904c0d07-83d7-43b2-8c11-465fe322c147)
