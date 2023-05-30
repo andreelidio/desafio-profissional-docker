@@ -1,13 +1,13 @@
-DESAFIO 01.
+<h1>DESAFIO 01</h1>
 
 Crie o MongoDB e o Mongo Express usando o docker compose.
 Mas antes vamos saber a definição de cada um.
 
-O mongodb é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL.
++ O mongodb é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL.
 
-O mongo-express (interface de adminstração do MongoDB via Web)
++ O mongo-express (interface de adminstração do MongoDB via Web).
 
-Links:
++ Links:🌐
 
 https://github.com/mongo-express/mongo-express
 
