@@ -22,7 +22,6 @@ https://www.pgadmin.org.
 
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/fbec0317-625b-4e30-b2ad-5d5c614e3141)
 
-![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/215fbe7d-d2be-4869-8678-2b1c98341e32)
 
 
 
