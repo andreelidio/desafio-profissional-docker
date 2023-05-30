@@ -14,12 +14,12 @@ https://docs.phpmyadmin.net/pt_BR/latest/
 
 https://www.phpmyadmin.net
 
-1. Container
+<h1>1. Container</h1>
 
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/a2cb33dc-74ba-4ed5-a182-41eb446e01cf)
 
 
-2. Acessando o phpMyAdmin.
+<h1>2. Acessando o phpMyAdmin.</h1>
 
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/4a582209-085d-4edf-afef-069365b5d284)
 
