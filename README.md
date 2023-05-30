@@ -21,5 +21,6 @@ https://www.devopspro.com.br/
 + Questão 7 -  Fazer o deploy de 2 aplicações: Rotten-Potatoes, que é escrita em Python e utiliza um banco de dados MongoDB e o KubeNews, que usa NodeJS e um banco Postgre. Adicionar a interface de administração do banco relacionado.
 
 
+
 ![image](https://github.com/andreelidio/desafio-profissional-docker/assets/97263573/41ed5da4-07f3-48d1-80fd-ab3cf2776eb5)
 
